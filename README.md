@@ -7,7 +7,9 @@ I chose a clean pink palette inspired by instagram original colors, and put some
 ## Colors
 * #FF97CC
 <br>
+
 * #FFFFFF
 <br>
+
 * #d3d3d3
 <br>
