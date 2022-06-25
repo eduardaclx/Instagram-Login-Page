@@ -10,8 +10,8 @@ I chose a clean pink palette inspired by instagram original colors, and put some
 
 * #FFFFFF
 
-* #d3d3d3
+* #D3D3D3
 
 ~~~javascript
-Time: 3 hours
+TIME: 3 HOURS
 ~~~
