@@ -10,4 +10,10 @@ I chose a clean pink palette inspired by instagram original colors, and put some
 * #FFFFFF
 
 * #d3d3d3
-<br>
+
+Exemplo   | Valor do exemplo
+--------- | ------
+Exemplo 1 | R$ 10
+Exemplo 2 | R$ 8
+Exemplo 3 | R$ 7
+Exemplo 4 | R$ 8
