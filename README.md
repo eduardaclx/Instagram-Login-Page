@@ -11,14 +11,3 @@ I chose a clean pink palette inspired by instagram original colors, and put some
 
 * #d3d3d3
 
-~~~javascript
-Esta é uma linha de código em Javascript.
-~~~
-
-~~~php
-Esta é uma linha de código em PHP.
-~~~
-
-~~~html
-Esta é uma linha de código em HTML.
-~~~
