@@ -5,7 +5,7 @@ I made my own version about Instagram Login Page step by step in a course at Dig
 I chose a clean pink palette inspired by instagram original colors, and put some ball animations
 <br>
 
-# Colors
+## Colors
 #FF97CC
 #FFFFFF
 #d3d3d3
