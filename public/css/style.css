@@ -11,7 +11,7 @@
 body {
     width: 100%;
     min-height: 100vh;
-    background-color: rgba(246, 183, 209, 0.15);
+    background-color: #ffffff;
     margin: 0;
     padding: 0;
     display: flex;
@@ -21,98 +21,34 @@ body {
 /* ball */
 .ball1 {
     position: absolute;
-    width: 15em;
-    height: 25vh;
+    width: 120em;
+    height: 200vh;
     background-color: #F6B7D1;
     border-radius: 50%;
-    animation: moveBall1 5s linear infinite;
+    animation: animacaoRGB 100s linear infinite;
     border: none;
+    top: -5em;
+    right: 10em;
+    z-index: -2;
 }
-.mini-ball1 {
-    position: absolute;
-    width: 10em;
-    height: 15vh;
-    background-color: rgba(246, 183, 209, 0.7);
-    border-radius: 50%;
-    animation: mini-moveBall1 4s linear infinite;
-    border: none;
-}
-.ball2 {
-    position: absolute;
-    width: 15em;
-    height: 25vh;
-    overflow: hidden;
-    background-color: #F6B7D1;
-    border-radius: 50%;
-    animation: moveBall2 7s linear infinite;
-    border: none;
-}
-.mini-ball2 {
-    display: flex;
-    position: absolute;
-    width: 10em;
-    height: 15vh;
-    background-color: rgba(246, 183, 209, 0.7);
-    border-radius: 50%;
-    animation: mini-moveBall2 5s linear infinite;
-    border: none;
-}
+
 /* animation ball */
-@keyframes moveBall1 {
-    0% {
-        top: -2em;
-        left: -2em;
+@keyframes animacaoRGB {
+    0%, 100% {
+        filter: hue-rotate(0deg);
+        border: none;
     } 50%{
-        top: -1em;
-        left: -1em;
-    } 100% {
-        top: -2em;
-        left: -2em;
-    }
+        filter: hue-rotate(180deg);
+        border: none;
+    } 
 }
-@keyframes moveBall2 {
-    0% {
-        bottom: 1em;
-        right: 1em;
-    } 50%{
-        bottom: 2em;
-        right: 2em;
-    } 100% {
-        bottom: 1em;
-        right: 1em;
-    }
-}
-@keyframes mini-moveBall1 {
-    0% {
-        top: 8em;
-        left: 8em;
-    } 50%{
-        top: 7em;
-        left: 7em;
-    } 100% {
-        top: 8em;
-        left: 8em;
-    }
-}
-@keyframes mini-moveBall2 {
-    0% {
-        bottom: 11em;
-        right: 11em;
-    } 50%{
-        bottom: 10em;
-        right: 10em;
-    } 100% {
-        bottom: 11em;
-        right: 11em;
-    }
-}
+
 
 /* first container (left side) */
 .instagram-wrapper {
     display: flex;
     align-items: center;
     justify-content: start;
-    /* border: solid 3px red; */
     width: 60%;
     height: 100vh;
 }
@@ -144,8 +80,8 @@ body {
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
-    background-color: rgba(255, 255, 255, 0.75);
-    border: 1px solid lightgray;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid #D3D3D3;
     width: 85%;
     padding: 1.3rem 0;    
     border-radius: 9px;
@@ -171,19 +107,23 @@ body {
 }
 .instagram-login {
     background-color: #FF97CC;
+    animation: animacaoRGB 100s linear infinite;
     color: #ffffff;
     padding: 8px;
     border-radius: 4px;
 }
 .instagram-login:hover {
     background-color: #fd8ec7;
+    animation: animacaoRGB 100s linear infinite;
 }
 .instagram-logout {
     color: #FF97CC;
     margin-top: 1rem;
+    animation: animacaoRGB 100s linear infinite;
 }
 .instagram-logout:hover {
     color: #fd8ec7;
+    animation: animacaoRGB 100s linear infinite;
 }
 .not-account {
     color: rgb(160, 160, 160);
@@ -191,12 +131,15 @@ body {
 }
 .link-blue {
     color: #FF97CC;
+    animation: animacaoRGB 100s linear infinite;
 }
 .link-blue:hover {
     color: #fd8ec7;
+    animation: animacaoRGB 100s linear infinite;
 }
 .get-app {
     margin-bottom: 1em;
+    animation: animacaoRGB 100s linear infinite;
 }
 .get-the-app {
     display: flex;
@@ -227,9 +170,6 @@ body {
 
 /* tablet and smartphone */
 @media (max-width: 1600px) {
-    .ball{
-        display: none;
-    }
     .instagram-wrapper {
         width: 80%;
     }
@@ -238,9 +178,6 @@ body {
     }
 }
 @media (max-width: 1200px) {
-    .ball{
-        display: none;
-    }
     .instagram-wrapper {
         width: 100%;
     }
@@ -251,12 +188,6 @@ body {
 @media (max-width: 650px) {
     body {
         background-color: #ffffff;
-    }
-    .ball{
-        display: none;
-    }
-    .group {
-        border: none;
     }
     .instagram-wrapper {
         width: 90%;
